@@ -1,0 +1,234 @@
+body{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.tab{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(105, 179, 182);
+}
+.logo{
+    color:white;
+    top :30px;
+    position: relative;
+    left:10%;
+    width: 70px;
+}
+.name{
+    color:white;
+    position: relative;
+    top: 30px;
+    left:50%;
+    font-size: 35px;
+    width: 70px;
+
+}
+.veganburger{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top:50px;
+    right:50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color: rgba(226, 202, 183, 0.842);
+    transition:all 0.8s;
+}
+.change .bar1{
+    transform: rotateZ(-405deg) translate(-8px,6px);
+    
+}
+.change .bar2{
+    opacity:0;
+}
+.change .bar3{
+    transform: rotateZ(405deg) translate(-8px,-6px);
+}
+li{
+    list-style:none;
+    margin: 25px;
+    position:relative;
+    width:100%;
+
+    }
+
+.navitem:hover{
+    background-color: rgba(156, 86, 86, 0.507);
+    color:black;
+}
+
+
+#amenu{
+    color:white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal ;
+}
+.nav{
+    width: 400px;
+    height: 100%;
+    background-color: rgba(105, 102, 102, 0.842);
+    position: fixed;
+    top:0;
+    right:-400px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    transition: right .8s cubic-bezier(1, 0, 0, 1);
+}
+.change{
+    right: 0;
+}
+
+.navmenu{
+    text-align: right;
+}
+.navitem{
+    width: 100%;
+
+}
+.loaderwrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loaderinner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loaderinner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loaderinner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+.disappear{
+    animation:dis 2s forwards;
+}
+@keyframes dis{
+    100%{opacity:0;
+    visibility: hidden;
+    }
+}
+.contactCon{
+    padding: 45px 60px 65px 61px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactText h1{
+    font-size: 100px;
+    color: white;
+}
+.contactInput{
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 14px 7px;
+    
+}
+.contactInput input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    width: 100%;
+    max-width: 80%;
+    font-size: 40px;
+}
+.contactInput textarea{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    width: 100%;
+    max-width: 80%;
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+.contactButton{
+    margin: 15px 0 30px 0;
+    padding: 14px 0;
+    border-radius: 34px;
+    font-weight: 700;
+    font-family: bold;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    max-width: 40%;
+    width: 100%;
+}
+.footwrap .footrow{
+    width: 100%;
+    height: 200px;
+    bottom:0;
+    left:0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#afoot{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+.footinfo{
+    font-size: 20px;
+    font-weight: 400;
+}
+.footlinks, .footp, .footsoc{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.footrow{
+    padding:30px 60px;
+}
+
